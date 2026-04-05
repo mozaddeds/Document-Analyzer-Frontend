@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Roboto_Condensed } from "next/font/google";
 import Squares from "../components/Squares";
 import FileInput from "../components/Input/FileInput";
