@@ -10,18 +10,6 @@ const robotoCondensed = Roboto_Condensed({
 export default function Home() {
   return (
     <div className="w-full h-screen relative">
-      {/* Squares background - full screen */}
-      {/* <div className="absolute inset-0 w-full h-full">
-        <Squares
-          speed={0.5}
-          squareSize={40}
-          direction='diagonal'
-          borderColor='#fff'
-          hoverFillColor='#222'
-        />
-      </div> */}
-      
-      {/* Content overlay - centered */}
       <div className={`absolute inset-0 flex flex-col items-center justify-center ${robotoCondensed.className}`}>
         <h1 className="text-4xl mb-4 text-white">Hello!</h1>
         <h4 className="w-150 text-center text-white/90">
