@@ -170,30 +170,30 @@ const FileInput = () => {
         }
 
         return (
-          <div className="mt-4 p-4 w-200 bg-green-50 border border-green-200 rounded">
+          <div className="mt-4 p-4 w-200 border border-green-200 rounded">
             <p className="text-green-800 font-medium">✓ Analysis complete!</p>
             <div className="mt-3">
               {structuredSummary ? (
                 <div className="space-y-3">
                   {structuredSummary.title && (
                     <div>
-                      <h3 className="font-bold text-gray-800 text-lg">{structuredSummary.title}</h3>
+                      <h3 className="font-bold text-lg">{structuredSummary.title}</h3>
                     </div>
                   )}
 
                   {structuredSummary.summary && (
                     <div>
-                      <h4 className="font-semibold text-gray-700">Summary</h4>
-                      <p className="text-gray-600">{structuredSummary.summary}</p>
+                      <h4 className="font-semibold">Summary</h4>
+                      <p className="">{structuredSummary.summary}</p>
                     </div>
                   )}
 
                   {structuredSummary.keyPoints && structuredSummary.keyPoints.length > 0 && (
                     <div>
-                      <h4 className="font-semibold text-gray-700">Key Points</h4>
+                      <h4 className="font-semibold">Key Points</h4>
                       <ul className="list-disc pl-5 space-y-1">
                         {structuredSummary.keyPoints.map((point: string, idx: number) => (
-                          <li key={idx} className="text-gray-600 text-sm">{point}</li>
+                          <li key={idx} className="text-sm">{point}</li>
                         ))}
                       </ul>
                     </div>
@@ -201,10 +201,10 @@ const FileInput = () => {
 
                   {structuredSummary.mainTopics && structuredSummary.mainTopics.length > 0 && (
                     <div>
-                      <h4 className="font-semibold text-gray-700">Main Topics</h4>
+                      <h4 className="font-semibold">Main Topics</h4>
                       <div className="flex flex-wrap gap-2">
                         {structuredSummary.mainTopics.map((topic: string, idx: number) => (
-                          <span key={idx} className="px-2 py-1 bg-gray-200 rounded-full text-xs">
+                          <span key={idx} className="px-2 py-1 rounded-full text-xs">
                             {topic}
                           </span>
                         ))}
@@ -213,7 +213,7 @@ const FileInput = () => {
                   )}
                 </div>
               ) : (
-                <pre className="bg-white p-3 rounded overflow-auto max-h-60 text-sm">
+                <pre className="p-3 rounded overflow-auto max-h-60 text-sm">
                   {JSON.stringify(uploadState.data, null, 2)}
                 </pre>
               )}
