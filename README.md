@@ -2,6 +2,8 @@
 DOCUMENT ANALYZER - FRONTEND DOCUMENTATION
 =============================================================================
 
+Project Live Link : [Document Analyzer](https://document-analyzer-frontend-cyan.vercel.app/)
+
 PROJECT OVERVIEW
 ----------------
 A Next.js-based web application that allows users to upload PDF documents 
