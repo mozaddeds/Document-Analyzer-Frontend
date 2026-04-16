@@ -305,39 +305,4 @@ DEBUGGING TIPS
 5. Test file validation with various file types/sizes
 6. Use React DevTools to inspect component state
 
-TESTING CHECKLIST
------------------
-Manual Testing:
-[ ] Upload valid PDF (< 10MB)
-[ ] Upload file > 10MB (should show error)
-[ ] Upload non-PDF file (should show error)
-[ ] Click submit without selecting file (should show error)
-[ ] Cancel upload mid-process (should handle gracefully)
-[ ] Upload while offline (should show network error)
-[ ] Try multiple uploads in succession
-[ ] Test "Analyze Another Document" button
-[ ] Test "Try Again" on error
-[ ] Verify summary displays correctly
-[ ] Check responsive design on mobile
-
-DEPLOYMENT NOTES
-----------------
-Build Command: npm run build
-Start Command: npm run start
-Port: 3000 (configurable via environment)
-
-Environment Variables:
-None required for frontend (backend URL hardcoded)
-
-Recommended:
-Create NEXT_PUBLIC_API_URL for production deployment
-
-Production Checklist:
-[ ] Replace localhost:8000 with production API URL
-[ ] Enable error tracking (Sentry, LogRocket)
-[ ] Add analytics (Google Analytics, Plausible)
-[ ] Configure CDN for static assets
-[ ] Enable compression
-[ ] Set up monitoring/uptime checks
-
 =============================================================================
